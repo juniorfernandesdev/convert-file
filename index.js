@@ -10,9 +10,9 @@ var data = xlsx.utils.sheet_to_json(ws);
 
 var newData = data.map(function(record) {
     record.endereco_foto = record.aluno;
-    record.depoimento_site_new = record.depoimento_site.split('\r\n'); 
+    // record.depoimento_site_new = record.depoimento_site.split('\r\n'); 
     delete record.depoimento_completo;
-    delete record.depoimento_site;
+    // delete record.depoimento_site;
     return record;
 });
 
